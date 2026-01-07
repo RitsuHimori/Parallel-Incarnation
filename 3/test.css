@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+
+* {
+  font-family: "Mozilla Headline", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header .logo {
+  text-decoration: none;
+  position: relative;
+}
+
+header .logo h1 {
+  color: yellow;
+  font-family: "Squada One", sans-serif;
+  font-size: 50px;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+header .logo h1:hover {
+  letter-spacing: 5px;
+  transform: scale(0.9, 0.9);
+  color: lightskyblue;
+  margin-left: -20px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+header nav{
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  transition: 0.4s;
+}
+
+header nav a:hover {
+  transform: scale(1.2, 1.2);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  color: lightskyblue;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://upload-os-bbs.hoyolab.com/upload/2025/01/16/31273374/1f75a0a7be1c91402a7249476c34f285_399336282946416766.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70");
+  height: 110vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 300px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+#hero .text {
+  margin-top: 100px;
+}
+
+#hero .text h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+#hero .text p {
+  color: white;
+}
+
+#hero .text h1 span {
+  color: yellow;
+  font-weight: 600;
+}
+
+#hero .card {
+  margin-top: -100px;
+  transition: 0.5s;
+}
+
+#hero .card img {
+  display: flex;
+  width: 400px;
+  height: 500px;
+  border-radius: 15px 50px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+#hero .card img:hover {
+  box-shadow: 0 15px 50px 0 rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+#hero .card:hover .content h1 {
+  color: lightskyblue;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#hero .card .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero .card .content h1 {
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  font-family: "Squada One", sans-serif;
+  letter-spacing: 5px;
+  margin-left: 15px;
+  transition: 0.4s;
+}
+
+#hero .card .content .stars {
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#hero .card .content .stars svg {
+  transition: 0.4s;
+  z-index: -1;
+}
+
+#hero .card:hover .content .stars svg {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+#video {
+  margin-top: -1px;
+  background: radial-gradient(rgba(14, 13, 33, 0.5), rgba(15, 20, 35, 0.5)), url("https://i.pinimg.com/1200x/e6/02/09/e602092b90a6ba22eaf963802790bb23.jpg");
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 200px;
+  align-items:  center;
+  text-align: center;
+}
+
+#video .text {
+  color: white;
+}
+
+#video .text h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  color: yellow;
+  font-family: "Squada One", sans-serif;
+  letter-spacing: 1px;
+}
+
+#video .text p {
+  margin: 10px;
+}
+
+#video .text p span {
+  color: yellow;
+}
+
+#video .gallery {
+  margin-top: 50px;
+  padding: 100px 50px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#video .gallery .card {
+  width: 320px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+#video .gallery .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px;
+  transition: 0.5s;
+}
+
+#video .gallery .card .content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#video .gallery .card .content a {
+  color: white;
+  text-decoration: none;
+}
+
+#video .gallery .card .content h4 {
+  font-family: "Squada One", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  transition: 0.5s;
+}
+
+#video .gallery .card .content h4 span {
+  background-color: yellow;
+  color: black;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#video .gallery .card:hover .content a h4 {
+  color: lightskyblue;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+}
+
+#video .gallery .card .content a h4 svg {
+  height: 30px;
+  width: 30px;
+  margin-top: -20px ;
+  margin-left: 10px;
+  margin-bottom: -7px;
+}
+
+#video .gallery .card img:hover {
+  transform: scale(1.1, 1.1);
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightskyblue;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#about {
+  height: 150vh;
+  background: radial-gradient(rgba(14, 13, 33, 0.5), rgba(15, 20, 35, 0.5)), url("https://admin.esports.gg/wp-content/uploads/2025/08/Hysilens-kit-is-the-savior-DoT-needed-in-Honkai-Star-Rail-1568x882.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+#about .title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#about .title h1 {
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-family: "Squada One", sans-serif;
+  color: yellow;
+}
+
+#about .title p {
+  padding: 0 200px 0;
+  color: white;
+}
+
+#about .title p span {
+  color: yellow;
+}
+
+#about .founders {
+  margin-top: 50px;
+  padding: 50px 50px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#about .founders .card h2 {
+  white-space: nowrap;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+#about .founders .card {
+  height: 250px;
+  width: 200px;
+}
+
+#about .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  position: relative;
+  bottom: 0;
+}
+
+#about .card img:hover {
+  bottom: 10px;
+}
+
+#about .card.niki img:hover {
+  filter: drop-shadow(10px 0 0 rgba(7, 255, 0, 1));
+}
+
+#about .card.ritsu img:hover {
+  filter: drop-shadow(10px 0 0 rgba(0, 162, 255, 1));
+}
+
+#about .card.hikaru img:hover {
+  filter: drop-shadow(10px 0px 0 rgba(166, 0, 255, 1));
+}
+
+#about .card.lisa img:hover {
+  filter: drop-shadow(10px 0 0 rgba(255, 0, 0, 1));
+}
+
+#about .card.simon img:hover {
+  filter: drop-shadow(10px 0 0 rgba(255, 255, 0, 1));
+}
+
+#about .card:hover .content.niki h1 {
+  background-color: rgba(7, 255, 0, 1);
+}
+
+#about .card:hover .content.ritsu h1 {
+  background-color: rgba(0, 162, 255, 1);
+}
+
+#about .card:hover .content.hikaru h1 {
+  background-color: rgba(166, 0, 255, 1);
+}
+
+#about .card:hover .content.lisa h1 {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+#about .card:hover .content.simon h1 {
+  background-color: rgba(255, 255, 0, 1);
+}
+
+#about .card:hover .content .catagory h4 span.hyperblood {
+  color: rgba(7, 255, 0, 1);
+}
+
+#about .card:hover .content .catagory h4 span.eru {
+  color: rgba(0, 162, 255, 1);
+}
+
+#about .card:hover .content .catagory h4 span.creata {
+  color: rgba(166, 0, 255, 1);
+}
+
+#about .card:hover .content .catagory h4 span.lust {
+  color: rgba(255, 0, 0, 1);
+}
+
+#about .card:hover .content .catagory h4 span.chance {
+  color: rgba(255, 255, 0, 1);
+}
+
+#about .founders .card:hover .content .catagory h4 {
+  background-color: white;
+  padding: 0px 200px 0 10px;
+  width: 200px;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 1);
+}
+
+#about .founders .card:hover h1 {
+  color: rgba(0, 0, 0, 1);
+}
+
+#about .founders .card:hover h2 {
+  color: rgba(255, 255, 255, 1);
+}
+
+#about .card .content h1 {
+  position: absolute;
+  background-color: white;
+  padding: 0px 200px 0 10px;
+  width: 200px;
+  margin-top: -30px;
+  font-size: 20px;
+  white-space: nowrap;
+  font-family: "Squada One", sans-serif;
+  transition: 0.5s;
+}
+
+#about .card .content .catagory {
+  display: inline-flex;
+}
+
+#about .card .content .catagory h4 {
+  transition: 0.5s;
+  white-space: nowrap;
+  padding: 0px 200px 0 0;
+  width: 200px;
+  color: rgba(255, 255, 255, 0);
+}
+
+#about .button {
+  margin-top: 150px;
+  padding: 100px;
+  text-align: center;
+}
+
+#about .button h1 {
+  margin: 50px;
+  font-size: 60px;
+  color: white;
+}
+
+#about .button a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 40px;
+  font-size: 30px;
+  border-radius: 5px 5px;
+  font-family: "Squada One", sans-serif;
+  transition: 0.5s;
+}
+
+#about .button a:hover {
+  background-color: yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  padding: 10px 60px;
+  letter-spacing: 2px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#about .button h1 span {
+  color: yellow;
+}
+
+#footer {
+  padding: 10px;
+}
+
+#footer p {
+  font-family: "Squada One", sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
